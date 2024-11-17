@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Out </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cart">
+      <h1>Shopping Cart.</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Size</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="https://i.pinimg.com/236x/8f/23/aa/8f23aa905da1e1a51dca474f2ca53699.jpg" alt="T-Shirt">
+              <span>Henley T-Shirt<br><small>Dark Gray</small></span>
+            </td>
+            <td>S</td>
+            <td class="quantity">
+              <button>-</button>
+              <span>2</span>
+              <button>+</button>
+            </td>
+            <td>$39.98</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="https://i.pinimg.com/236x/2a/9a/53/2a9a530cc03d8dd849ede2f545d0aede.jpg" alt="Sneakers">
+              <span>High Top Sneakers<br><small>Brown</small></span>
+            </td>
+            <td>10.5</td>
+            <td class="quantity">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </td>
+            <td>$69.99</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="https://i.pinimg.com/236x/60/34/d0/6034d0ccb05e6df27028169420d04074.jpg" alt="Sweater">
+              <span>Sweater Hooded<br><small>Light Gray</small></span>
+            </td>
+            <td>S</td>
+            <td class="quantity">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </td>
+            <td>$39.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#" class="continue-shopping">&larr; Continue Shopping</a>
+    </div>
+
+    <div class="payment-info">
+      <h2>Payment Info.</h2>
+      <div class="payment-methods">
+        <button>Credit Card</button>
+        <button>PayPal</button>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name On Card:</label>
+          <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="card">Card Number:</label>
+          <input type="text" id="card" placeholder="**** **** **** 3271">
+        </div>
+        <div class="form-group">
+          <label for="expiration">Expiration Date:</label>
+          <select id="month">
+            <option>MM</option>
+            <option>01</option>
+            <option>02</option>
+          </select>
+          <select id="year">
+            <option>YYYY</option>
+            <option>2024</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" placeholder="XXX">
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Check Out">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
